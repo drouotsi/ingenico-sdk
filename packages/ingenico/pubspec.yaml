@@ -1,0 +1,30 @@
+name: ingenico_sdk
+description: A new flutter plugin project.
+version: 0.0.3
+homepage:
+
+environment:
+  sdk: ">=2.12.0 <3.0.0"
+  flutter: ">=1.20.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  pigeon: ^3.0.3
+  ingenico_platform_interface:
+    git:
+      url: https://github.com/bamlab/ingenico-flutter-sdk.git
+      path: packages/ingenico_platform_interface
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  plugin:
+    platforms:
+      android:
+        package: com.ingenico.flutter_sdk
+        pluginClass: IngenicoSdkPlugin
+      ios:
+        pluginClass: IngenicoSdk

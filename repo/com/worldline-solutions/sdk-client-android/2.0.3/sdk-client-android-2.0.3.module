@@ -1,0 +1,88 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "com.worldline-solutions",
+    "module": "sdk-client-android",
+    "version": "2.0.3",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "7.4.2"
+    }
+  },
+  "variants": [
+    {
+      "name": "releaseApiPublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-api"
+      },
+      "files": [
+        {
+          "name": "sdk-client-android-2.0.3.aar",
+          "url": "sdk-client-android-2.0.3.aar",
+          "size": 629688,
+          "sha512": "527f8a52fd0228a7c6b591ffd037a0a4c82361dce9e8dae4fed484e3b94aac7ef967a61d2fb00d84c45c91b2f777bfa3e660eb2c64e70533e0020c4e1fdad7e4",
+          "sha256": "2a66fdef76982346c7cd9b375f5f919242d9296ca578ee179c0b4a6144cf94c8",
+          "sha1": "4b260f552cb1a17becf148055f7983a271869fa6",
+          "md5": "0b866168fca70b85442d5fe6766ce45b"
+        }
+      ]
+    },
+    {
+      "name": "releaseRuntimePublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "com.google.code.gson",
+          "module": "gson",
+          "version": {
+            "requires": "2.8.8"
+          }
+        },
+        {
+          "group": "org.apache.commons",
+          "module": "commons-lang3",
+          "version": {
+            "requires": "3.9"
+          }
+        },
+        {
+          "group": "androidx.annotation",
+          "module": "annotation",
+          "version": {
+            "requires": "1.3.0"
+          }
+        },
+        {
+          "group": "com.google.android.gms",
+          "module": "play-services-wallet",
+          "version": {
+            "requires": "19.0.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "sdk-client-android-2.0.3.aar",
+          "url": "sdk-client-android-2.0.3.aar",
+          "size": 629688,
+          "sha512": "527f8a52fd0228a7c6b591ffd037a0a4c82361dce9e8dae4fed484e3b94aac7ef967a61d2fb00d84c45c91b2f777bfa3e660eb2c64e70533e0020c4e1fdad7e4",
+          "sha256": "2a66fdef76982346c7cd9b375f5f919242d9296ca578ee179c0b4a6144cf94c8",
+          "sha1": "4b260f552cb1a17becf148055f7983a271869fa6",
+          "md5": "0b866168fca70b85442d5fe6766ce45b"
+        }
+      ]
+    }
+  ]
+}
